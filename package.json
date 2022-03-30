@@ -1,5 +1,5 @@
 {
-  "name": "ggordonvi-threejs",
+  "name": "ggordonvi",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -20,6 +20,7 @@
     "@angular/router": "~13.2.0",
     "@types/three": "^0.138.0",
     "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0",
     "rxjs": "~7.5.0",
     "three": "^0.138.2",
     "tslib": "^2.3.0",
