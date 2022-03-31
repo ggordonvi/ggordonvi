@@ -5,7 +5,12 @@
 
 .social {
 }
+
 .social-icon {
     color: #ffffff;
     padding: 10px;
+}
+.social-icon a {
+    color: #ffffff;
+    text-decoration: none !important;
 }

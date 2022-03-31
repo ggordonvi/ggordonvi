@@ -15,3 +15,9 @@
     border-radius: 0.25rem;
     transition: box-shadow .15s ease-in-out;
 }
+
+@media (max-width: 991px) {
+    .nav-link {
+        color: black !important;
+    }
+}
