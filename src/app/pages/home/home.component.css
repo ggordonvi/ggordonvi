@@ -1,17 +1,37 @@
-.image {
-    padding: 0 !important;
-    /* width: 300px;
-    height: 300px; */
+.banner {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
-.world {
-    /* width: 300px;
-    height: 300px; */
+.banner-text {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.day {
-    transform: rotate(45turn) !important;
+.action-item-scroll {
+    text-align: center;
 }
-.night {
-    transform: rotate(45,-556.9 -75.655) !important;
+
+@keyframes bounce {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-15px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .fa-jump {
+    animation: bounce 3s ease-in 1s 2 reverse;
 }

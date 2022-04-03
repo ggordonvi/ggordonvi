@@ -1,11 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #c9c9c9;
+
+    --primary: #486b80;
+    --offset: #353232;
+
+    --sidenav-size: 250px;
+}
+
 html {
     height:100%;
     width:100%;
 }
 
 body {
-    background-color: #ffffff;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     height:100%;

@@ -1,0 +1,40 @@
+<div class="mobile-nav">
+    <div class="mobile-nav-header">
+        <h1>GGVI</h1>
+    </div>
+    
+    <div class="mobile-nav-open">
+        <button type="button" class="mobile-nav-button" aria-label="Open Menu" (click)="openMenu()">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </button>
+    </div>
+
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay" [style.width]="navOverlayWidth">
+        <div class="mobile-nav-menu">
+            <div class="mobile-nav-menu-header">
+                <h1 style="color:white">directory.</h1>
+            </div>
+            <div class="mobile-nav-close">
+                <button type="button" class="mobile-nav-button" aria-label="Close Menu" (click)="closeMenu()">
+                    <i class="fa-solid fa-xmark fa-xl" style="color:#ffffff"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-nav-body">
+            <div class="mobile-nav-link-button" routerLink="/home" aria-current="page" (click)="closeMenu()">
+                <h4 class="mobile-nav-link">home</h4>  
+            </div>
+            <div class="mobile-nav-link-button" routerLink="/about" aria-current="page" (click)="closeMenu()">
+                <h4 class="mobile-nav-link">about</h4>
+            </div>
+            <div class="mobile-nav-link-button" routerLink="/portfolio" aria-current="page" (click)="closeMenu()">
+                <h4 class="mobile-nav-link">portfolio</h4>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>

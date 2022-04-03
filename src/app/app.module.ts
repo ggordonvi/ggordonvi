@@ -11,6 +11,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { FourohfourComponent } from './pages/fourohfour/fourohfour.component';
+import { MobilenavComponent } from './components/mobilenav/mobilenav.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { FourohfourComponent } from './pages/fourohfour/fourohfour.component';
     AboutComponent,
     PortfolioComponent,
     ContactComponent,
-    FourohfourComponent
+    FourohfourComponent,
+    MobilenavComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,16 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<div *ngIf="mobile">
+    <app-mobilenav></app-mobilenav>
+    <div class="mobile-main">
+        <router-outlet></router-outlet>
+    </div>
+</div>
 
-<app-footer></app-footer>
+<div *ngIf="!mobile">
+    <div class="sidenav">
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="main">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+

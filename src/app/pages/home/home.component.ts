@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   
   public currentTime = new Date();
-  public greetings = ['good morning', 'good afternoon', 'good evening'];
+  public greetings = ['Good morning', 'Good afternoon', 'Good evening'];
   public defaultGreeting = '';
   // public world = document.getElementById('world');
 
