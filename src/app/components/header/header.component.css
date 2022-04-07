@@ -16,6 +16,25 @@
     transition: box-shadow .15s ease-in-out;
 }
 
+.nav-link {
+    font-family: "BebasNeue", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: rgba(1, 1, 1, 0.685);
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.nav-link:hover {
+    color: rgb(1, 1, 1);
+}
+
+.active-link {
+    color: rgb(1, 1, 1);
+    border-bottom: 2px solid rgb(1, 1, 1);
+}
+
 @media (max-width: 991px) {
     .nav-link {
         color: black !important;

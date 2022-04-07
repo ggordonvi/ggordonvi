@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+    font-family: "BebasNeue";
+    src: local("BebasNeue"), url(./assets/fonts/BebasNeue-Regular.ttf) format("truetype");
+}
+
 :root {
     --white: #ffffff;
     --black: #000000;
@@ -30,4 +35,48 @@ body::-webkit-scrollbar {
 .section {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.row-spacer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.section-header {
+    font-family: "BebasNeue", Arial, Helvetica, sans-serif;
+    color: rgba(1, 1, 1, 0.15);
+    font-size: 5rem;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .section-header {
+        font-size: 10rem;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .section-header {
+        font-size: 10rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .section-header {
+        font-size: 15rem;
+    }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
 }
