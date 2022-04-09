@@ -4,6 +4,22 @@
     font-family: "BebasNeue";
     src: local("BebasNeue"), url(./assets/fonts/BebasNeue-Regular.ttf) format("truetype");
 }
+@font-face {
+    font-family: "KaushanScript";
+    src: local("KaushanScript"), url(./assets/fonts/KaushanScript-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "ArchitectsDaughter";
+    src: local("ArchitectsDaughter"), url(./assets/fonts/ArchitectsDaughter-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "AmaticSC-Regular";
+    src: local("AmaticSC-Regular"), url(./assets/fonts/AmaticSC-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "AmaticSC-Bold";
+    src: local("AmaticSC-Bold"), url(./assets/fonts/AmaticSC-Bold.ttf) format("truetype");
+}
 
 :root {
     --white: #ffffff;
@@ -39,6 +55,13 @@ body::-webkit-scrollbar {
 .row-spacer {
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.code {
+    font-family: "ArchitectsDaughter", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    /* letter-spacing: 2px; */
+    color: rgba(1, 1, 1, 0.3);
 }
 
 .section-header {

@@ -12,10 +12,12 @@
 }
 
 .social-icon {
-    color: #000000;
-    padding: 10px;
+    padding: 15px;
 }
 .social-icon a {
-    color: #000000;
+    color: rgba(1, 1, 1, 0.50);
     text-decoration: none !important;
+}
+.social-icon a:hover {
+    color: rgba(1, 1, 1, 0.75);
 }
