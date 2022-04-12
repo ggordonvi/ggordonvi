@@ -13,6 +13,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FourohfourComponent } from './pages/fourohfour/fourohfour.component';
 import { MobilenavComponent } from './components/mobilenav/mobilenav.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { ExperienceComponent } from './pages/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     ContactComponent,
     FourohfourComponent,
     MobilenavComponent,
-    SidenavComponent
+    SidenavComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
