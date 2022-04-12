@@ -5,7 +5,7 @@ on:
     branches:
     - master
   paths:
-    - 'deploy'
+    - 'deploy/**'
 
 jobs:
   deploy:
