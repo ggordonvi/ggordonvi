@@ -1,9 +1,10 @@
 
-.card {
-    background-color:rgba(125, 125, 125, 0.053);
+.portfolio-card {
+    background-color: var(--black-3);
+    color: var(--white-1);
 }
 
 .image-placeholder {
-    background-color:rgba(0, 0, 0, 0.053);
+    background-color:rgba(217, 217, 217, 0.278);
     height: 100%;
 }

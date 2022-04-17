@@ -1,42 +1,21 @@
-.header {
-    height: 80px;
+.navbar {
+    background-color: var(--black-2) !important;
 }
-
-.full-width {
-    width: 100% !important;
-}
-
-.close-btn {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-    transition: box-shadow .15s ease-in-out;
-}
-
 .nav-link {
-    font-family: "BebasNeue", Arial, Helvetica, sans-serif;
+    font-family: "secondary", Arial, Helvetica, sans-serif;
     font-size: 25px;
     letter-spacing: 2px;
-    color: rgba(1, 1, 1, 0.685);
+    color: var(--white-2);
     padding-left: 0;
     padding-right: 0;
     margin-left: 20px;
     margin-right: 20px;
 }
 .nav-link:hover {
-    color: rgb(1, 1, 1);
+    color: var(--white-1);
 }
 
 .active-link {
-    color: rgb(1, 1, 1);
-    border-bottom: 2px solid rgb(1, 1, 1);
-}
-
-@media (max-width: 991px) {
-    .nav-link {
-        color: black !important;
-    }
+    color: var(--white-1);
+    border-bottom: 2px solid var(--primary-1);
 }

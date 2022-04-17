@@ -16,13 +16,13 @@
   }
 
   .main {
-    background-color: var(--primary);
+    background-color: var(--primary-1);
     color: var(--white);
     margin-left: var(--sidenav-size); /* Same as the width of the sidebar */
     padding: 0px 10px;
   }
   .mobile-main {
-    background-color: var(--primary);
+    background-color: var(--primary-1);
     color: var(--white);
 
   }
