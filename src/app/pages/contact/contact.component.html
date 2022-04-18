@@ -7,4 +7,32 @@
     <div class="code" style="margin-left:20px">&lt;/span&gt;</div>
     <div class="code" style="margin-left:20px">&lt;div class="row"&gt;</div>
 
+    <div class="row">
+        <div class="col-sm-12 col-md-4 offset-md-2">
+            <form>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <select class="form-select" aria-label="Subject">
+                        <option class="select-option" selected disabled>Reason...</option>
+                        <option class="select-option" value="inquiry">General Inquiry</option>
+                        <option class="select-option" value="bug">Report Bug</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Your email will only be used for follow up.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                  </div>
+                <button type="submit" class="btn email-btn">Send</button>
+            </form>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            
+        </div>
+    </div>
+
 </div>
