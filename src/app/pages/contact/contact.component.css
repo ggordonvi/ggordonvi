@@ -1,3 +1,6 @@
+.contact {
+    min-height: calc(100vh - (var(--navbar-height) + var(--footer-height )));
+}
 
 .form-label {
     font-family: "secondary", Arial, Helvetica, sans-serif;

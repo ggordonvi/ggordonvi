@@ -1,209 +1,38 @@
 <div class="section">
 
     <div class="code">&lt;app-portfolio&gt;</div>
-    <div class="code code-s1">&lt;div class="section"&gt;</div>
-    <div class="code code-s2">&lt;span class="section-header"&gt;</div>
-
     <span class="section-header">Portfolio</span>
 
-    <div class="code code-s2">&lt;/span&gt;</div>
-    <div class="code code-s2">&lt;div class="row"&gt;</div>
-
-    <!-- <div class="row" style="text-align: center;">
-        <div class="col-sm-12 col-md-3 col-xl-2 offset-lg-1 offset-xl-2 mb-4">
-            <input class="form-control mb-4" type="text" placeholder="search" (keyup)="search($event)" aria-label="search">
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    work experience
-                    <span class="badge bg-primary rounded-pill">1</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    projects
-                    <span class="badge bg-primary rounded-pill">2</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    graphic work
-                    <span class="badge bg-primary rounded-pill">1</span>
-                </li>
-            </ul>
-        </div>
-        <div class="col-sm-12 col-md-9 col-lg-6 col-xl-6">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-
-                <div *ngFor="let work of filteredWorks; index as i; first as isFirst">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="{{ work.id }}">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]=work.databstarget aria-expanded="false" aria-controls=work.databstarget>
-                                {{ work.title }}
-                            </button>
-                        </h2>
-                        <div id="{{ work.flushcollapseone }}" class="accordion-collapse collapse" aria-labelledby=work.id data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">{{ work.message }}</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    
-    </div> -->
-
-    <div class="row">
-        <div class="col-sm-12 col-md-10 offset-md-1">
-            <div class="row g-0 portfolio-card position-relative mb-3 shadow">
-                <div class="col-md-5 mb-md-0 p-md-4">
-                    <div src="..." class="w-100 image-placeholder" alt="..."></div>
-                </div>
-                <div class="col-md-7 p-4 ps-md-0">
-                    <h2 class="mt-0">Seating App</h2>
-                    <h4>MEAN Stack Web Application</h4>
-                    <h4 class="pt-4">Core Features</h4>
-                    <ul>
-                        <li>Angular 7, Node.js, Express, Mongoose</li>
-                        <li>Password hashing and session tokens</li>
-                        <li>Fluid UI reactions to user selection</li>
-                        <li>RESTful API and CRUD database operations</li>
-                        <li>Jasmine and Karma unit testing</li>
-                        <li>Selenium behavioral testing</li>
-                        <li>Interactive floorplans built with Fabric.js framework</li>
-                        <li>AWS Elastic Beanstalk and MongoDB hosting</li>
-                    </ul>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>           
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-12 col-md-10 offset-md-1">
-            <div class="row g-0 portfolio-card position-relative mb-3 shadow">
-                <div class="col-md-5 mb-md-0 p-md-4">
-                    <div src="..." class="w-100 image-placeholder" alt="..."></div>
-                </div>
-                <div class="col-md-7 p-4 ps-md-0">
-                    <h2 class="mt-0">Seating App</h2>
-                    <h4>MEAN Stack Web Application</h4>
-                    <h4 class="pt-4">Core Features</h4>
-                    <ul>
-                        <li>Angular 7, Node.js, Express, Mongoose</li>
-                        <li>Password hashing and session tokens</li>
-                        <li>Fluid UI reactions to user selection</li>
-                        <li>RESTful API and CRUD database operations</li>
-                        <li>Jasmine and Karma unit testing</li>
-                        <li>Selenium behavioral testing</li>
-                        <li>Interactive floorplans built with Fabric.js framework</li>
-                        <li>AWS Elastic Beanstalk and MongoDB hosting</li>
-                    </ul>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>           
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-12 col-md-10 offset-md-1">
-            <div class="row g-0 portfolio-card position-relative mb-3 shadow">
-                <div class="col-md-5 mb-md-0 p-md-4">
-                    <div src="..." class="w-100 image-placeholder" alt="..."></div>
-                </div>
-                <div class="col-md-7 p-4 ps-md-0">
-                    <h2 class="mt-0">Seating App</h2>
-                    <h4>MEAN Stack Web Application</h4>
-                    <h4 class="pt-4">Core Features</h4>
-                    <ul>
-                        <li>Angular 7, Node.js, Express, Mongoose</li>
-                        <li>Password hashing and session tokens</li>
-                        <li>Fluid UI reactions to user selection</li>
-                        <li>RESTful API and CRUD database operations</li>
-                        <li>Jasmine and Karma unit testing</li>
-                        <li>Selenium behavioral testing</li>
-                        <li>Interactive floorplans built with Fabric.js framework</li>
-                        <li>AWS Elastic Beanstalk and MongoDB hosting</li>
-                    </ul>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>           
-        </div>
-    </div>
+    <router-outlet name="portfolio"></router-outlet>
 
     <!-- <div class="row">
         <div class="col-sm-12 col-md-10 offset-md-1">
-            <div class="card mb-3 shadow-sm">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <div src="..." class="img-fluid rounded-start image-placeholder" alt="..."></div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
+            <div class="row g-0 portfolio-card position-relative mb-3 shadow">
+                <div class="col-md-5 mb-md-0 p-md-4">
+                    <div src="..." class="w-100 image-placeholder" alt="..."></div>
                 </div>
-            </div>
-            <div class="card mb-3 shadow-sm">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <div src="..." class="img-fluid rounded-start image-placeholder" alt="..."></div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
+                <div class="col-md-7 p-4 ps-md-0">
+                    <h2 class="mt-0">Seating App</h2>
+                    <h4>MEAN Stack Web Application</h4>
+                    <h4 class="pt-4">Core Features</h4>
+                    <ul>
+                        <li>Angular 7, Node.js, Express, Mongoose</li>
+                        <li>Password hashing and session tokens</li>
+                        <li>Fluid UI reactions to user selection</li>
+                        <li>RESTful API and CRUD database operations</li>
+                        <li>Jasmine and Karma unit testing</li>
+                        <li>Selenium behavioral testing</li>
+                        <li>Interactive floorplans built with Fabric.js framework</li>
+                        <li>AWS Elastic Beanstalk and MongoDB hosting</li>
+                    </ul>
+                    <a href="#" class="stretched-link"></a>
                 </div>
-            </div>
-            <div class="card mb-3 shadow-sm">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <div src="..." class="img-fluid rounded-start image-placeholder" alt="..."></div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3 shadow-sm">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <div src="..." class="img-fluid rounded-start image-placeholder" alt="..."></div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3 shadow-sm">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <div src="..." class="img-fluid rounded-start image-placeholder" alt="..."></div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div>           
         </div>
     </div> -->
 
 
-    <div class="code code-s2">&lt;/div&gt;</div>
-    <div class="code code-s1">&lt;/div&gt;</div>
+
     <div class="code">&lt;app-portfolio&gt;</div>
 
 </div>

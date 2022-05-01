@@ -8,13 +8,46 @@ import { AboutComponent } from './pages/about/about.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { DashboardComponent } from './components/portfolio/dashboard/dashboard.component';
+import { DetailComponent } from './components/portfolio/detail/detail.component';
 
 const routes: Routes = [
-  { path: 'contact',   component: ContactComponent },
-  { path: 'portfolio',   component: PortfolioComponent },
-  { path: 'skills',   component: ExperienceComponent },
-  { path: 'about',   component: AboutComponent },
-  { path: 'home',   component: HomeComponent },
+
+  // { path: 'contact',   component: ContactComponent },
+  { 
+    path: 'portfolio',
+    component: PortfolioComponent,
+    children: [
+      {
+        path: "",
+        outlet: "portfolio",
+        component: DashboardComponent
+      },
+      {
+        path: "detail",
+        outlet: "portfolio",
+        component: DetailComponent
+      }
+    ]
+  },
+  { path: 'skills', component: ExperienceComponent },
+  { path: 'about', component: AboutComponent },
+  { 
+    path: 'home',
+    component: HomeComponent,
+    children: [
+      {
+        path: "",
+        outlet: "portfolio",
+        component: DashboardComponent
+      },
+      {
+        path: "detail",
+        outlet: "portfolio",
+        component: DetailComponent
+      }
+    ]
+  },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '',   component: HomeComponent },
 

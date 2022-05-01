@@ -1,0 +1,22 @@
+.portfolio-card {
+    background-color: var(--black-3);
+    color: var(--white-1);
+    height: 300px;
+}
+
+.portfolio-overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-overlay p {
+    font-family: "secondary", Arial, Helvetica, sans-serif;
+    color: var(--white-1);
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+}
+.portfolio-overlay:hover {
+    background-color: var(--black-2);
+}

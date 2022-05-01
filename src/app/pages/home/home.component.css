@@ -1,37 +1,45 @@
 .banner {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 20px;
+  min-height: calc(100vh - var(--navbar-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .banner-text {
-    margin-top: auto;
-    margin-bottom: auto;
+  display: flex;
+  justify-content: center;
+  font-family: "secondary", Arial, Helvetica, sans-serif;
+  color: var(--white-3);
+  font-size: 5rem;
+  line-height: 5rem;
 }
 
-.action-item-scroll {
-    text-align: center;
-}
-
-@keyframes bounce {
-    0%,
-    25%,
-    50%,
-    75%,
-    100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-15px);
-    }
-    60% {
-      transform: translateY(-10px);
-    }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .banner-text {
+    font-size: 10rem;
+    line-height: 10rem;
   }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .banner-text {
+    font-size: 10rem;
+    line-height: 10rem;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .banner-text {
+    font-size: 15rem;
+    line-height: 15rem;
+  }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 
-  .fa-jump {
-    animation: bounce 3s ease-in 1s 2 reverse;
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
 }

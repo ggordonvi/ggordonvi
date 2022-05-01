@@ -1,9 +1,22 @@
 .navbar {
+    background-color: none;
+    height: var(--navbar-height);
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.navbar-scroll {
     background-color: var(--black-2) !important;
+}
+
+.nav {
+    height: 100%;
 }
 
 .nav-brand {
     font-family: "secondary", Arial, Helvetica, sans-serif !important;
+    height: 100%;
     color: var(--white-1);
     font-size: 2.5rem;
     letter-spacing: 5px;
@@ -14,13 +27,19 @@
     padding-left: 20px;
 }
 
+.nav-item {
+    margin-bottom: 0 !important;
+}
+
 .nav-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
     font-family: "secondary", Arial, Helvetica, sans-serif;
     font-size: 25px;
     letter-spacing: 2px;
     color: var(--white-2);
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -30,5 +49,6 @@
 
 .active-link {
     color: var(--white-1);
+    padding-top: 2px;
     border-bottom: 2px solid var(--primary-1);
 }

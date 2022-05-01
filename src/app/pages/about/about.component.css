@@ -8,3 +8,7 @@
 .collage-card:hover {
     transform: scale(1.2);
 }
+
+.row-test {
+    min-height: 100vh;
+}

@@ -30,7 +30,9 @@
     --primary-2: rgba(33, 187, 95, 0.75);
     --primary-3: rgba(33, 187, 95, 0.50);
 
-    --sidenav-size: 250px;
+    --navbar-height: 125px;
+    --mobile-navbar-height: 80px;
+    --footer-height: 125px;
 }
 
 html {
@@ -56,11 +58,13 @@ body::-webkit-scrollbar {
     color: var(--white-1);
 }
 ul {
-    font-family: "primary", Arial, Helvetica, sans-serif !important;
-    color: var(--white-1);
+
 }
 li {
-    margin-bottom: 10px;
+    font-family: "primary", Arial, Helvetica, sans-serif;
+    color: var(--white-1);
+    font-size: 18px;
+    margin-bottom: 10px !important;
 }
 
 p {
@@ -73,13 +77,13 @@ p {
 .row {
     /* --bs-gutter-x: none !important;
     --bs-gutter-y: none !important; */
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
+    /* margin-top: 20px !important;
+    margin-bottom: 20px !important; */
 }
 
 .section {
-    padding-top: 150px;
-    padding-bottom: 50px;
+    /* padding-top: 150px;
+    padding-bottom: 50px; */
 }
 .row-spacer {
     margin-top: 100px !important;
@@ -91,6 +95,8 @@ p {
     font-size: 20px;
     /* letter-spacing: 2px; */
     color: var(--white-4);
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .code-s1 {
     margin-left: 5px;
@@ -104,7 +110,7 @@ p {
 
 .section-header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     font-family: "secondary", Arial, Helvetica, sans-serif;
     color: var(--white-3);
     font-size: 5rem;
@@ -125,9 +131,7 @@ p {
         font-size: 10rem;
         line-height: 10rem;
     }
-
 }
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .section-header {
@@ -135,21 +139,17 @@ p {
         line-height: 10rem;
     }
 }
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .section-header {
         font-size: 15rem;
         line-height: 15rem;
     }
-
 }
-
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
 }
-
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 
