@@ -15,9 +15,10 @@ import { AboutComponent } from './pages/about/about.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { DashboardComponent } from './components/portfolio/dashboard/dashboard.component';
-import { ItemComponent } from './components/portfolio/item/item.component';
-import { DetailComponent } from './components/portfolio/detail/detail.component';
+
+import { DashboardComponent } from './pages/portfolio/dashboard/dashboard.component';
+import { ItemComponent } from './pages/portfolio/item/item.component';
+import { DetailComponent } from './pages/portfolio/detail/detail.component';
 
 @NgModule({
   declarations: [

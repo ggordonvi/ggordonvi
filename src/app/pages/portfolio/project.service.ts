@@ -1,12 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { Project } from 'src/app/class/project';
+import { Injectable } from '@angular/core';
+import { Project } from 'src/app/pages/portfolio/project';
 
-@Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+@Injectable({
+  providedIn: 'root'
 })
-export class DashboardComponent implements OnInit {
+export class ProjectService {
 
   public projects: Project[] = [];
 
@@ -20,8 +18,11 @@ export class DashboardComponent implements OnInit {
     this.projects.push(new Project(i++, '2015 Portfolio', 'Testing description'));
   }
 
-  ngOnInit(): void {
-    console.log(this.projects);
+  getProject(id: number): Project {
+    return this.projects[id];
   }
 
+  getAllProjects(): Project[] {
+    return this.projects;
+  }
 }

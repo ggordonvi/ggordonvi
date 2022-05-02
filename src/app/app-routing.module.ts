@@ -8,8 +8,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { DashboardComponent } from './components/portfolio/dashboard/dashboard.component';
-import { DetailComponent } from './components/portfolio/detail/detail.component';
+import { DashboardComponent } from './pages/portfolio/dashboard/dashboard.component';
+import { DetailComponent } from './pages/portfolio/detail/detail.component';
 
 const routes: Routes = [
 
@@ -24,7 +24,7 @@ const routes: Routes = [
         component: DashboardComponent
       },
       {
-        path: "detail",
+        path: "project/:id",
         outlet: "portfolio",
         component: DetailComponent
       }
@@ -42,7 +42,7 @@ const routes: Routes = [
         component: DashboardComponent
       },
       {
-        path: "detail",
+        path: "project/:id",
         outlet: "portfolio",
         component: DetailComponent
       }
@@ -57,7 +57,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
+  // imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
