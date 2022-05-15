@@ -14,11 +14,11 @@ export class DashboardComponent implements OnInit {
   constructor(private projectSevice: ProjectService) {}
 
   ngOnInit(): void {
-    this.getAllProjects();
+    this.getProjects();
   }
 
-  getAllProjects(): void {
-    this.projects = this.projectSevice.getAllProjects();
+  getProjects(): void {
+    this.projectSevice.getProjects().subscribe(projects => this.projects = projects);
   }
 
 }

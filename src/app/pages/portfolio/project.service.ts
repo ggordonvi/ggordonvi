@@ -1,28 +1,23 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
+
 import { Project } from 'src/app/pages/portfolio/project';
+import { PROJECTS } from 'src/app/pages/portfolio/projects';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectService {
 
-  public projects: Project[] = [];
+  constructor() { }
 
-  constructor() {
-    var i = 0;
-    this.projects.push(new Project(i++, 'Seating App', 'Testing description'));
-    this.projects.push(new Project(i++, 'Jill Sells the Carolinas', 'Testing description'));
-    this.projects.push(new Project(i++, 'Graphics', 'Testing description'));
-    this.projects.push(new Project(i++, '2022 Portfolio', 'Testing description'));
-    this.projects.push(new Project(i++, '2019 Portfolio', 'Testing description'));
-    this.projects.push(new Project(i++, '2015 Portfolio', 'Testing description'));
+  getProjects(): Observable<Project[]> {
+    const projects = of(PROJECTS);
+    return projects;
   }
 
-  getProject(id: number): Project {
-    return this.projects[id];
-  }
-
-  getAllProjects(): Project[] {
-    return this.projects;
+  getProject(id: number): Observable<Project> {
+    const project = PROJECTS.find(project => project.id === id)!;
+    return of(project);
   }
 }

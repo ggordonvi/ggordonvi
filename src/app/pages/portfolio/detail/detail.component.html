@@ -1,11 +1,32 @@
 <div class="row mt-3 mb-3">
-    <div class="col-sm-12 col-md-5 col-lg-2">
+    <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3">
         <div class="custom-btn" [routerLink]="[baseUrl, { outlets: { portfolio: null }}]">Back to Dashboard</div>
     </div>
 </div>
 
 <div class="portfolio-detail-card">
-    <h3>{{ project.title }}</h3>
+
+    <h2>{{ project.title }}</h2>
     <p>{{ project.description }}</p>
+
+    <div class="mt-4" *ngIf="project.about != ''">
+        <h4>About</h4>
+        <p>{{ project.about }}</p>
+    </div>
+
+    <div class="mt-4" *ngIf="project.features.length > 0">
+        <h4>Features</h4>
+        <ul>
+            <li *ngFor="let feature of project.features">
+                {{ feature }}
+            </li>
+        </ul>
+    </div>
+
+    <div class="mt-2" *ngIf="project.title === 'Graphics'">
+        <div *ngFor="let picture of project.pictures">
+            <img [src]="picture">
+        </div>
+    </div>
 
 </div>

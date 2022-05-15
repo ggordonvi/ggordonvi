@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+
 import { Project } from 'src/app/pages/portfolio/project';
 import { ProjectService } from 'src/app/pages/portfolio/project.service';
 
@@ -20,7 +21,11 @@ export class ItemComponent implements OnInit {
     ) {}
 
   ngOnInit(): void {
-    this.project = this.projectService.getProject(this.projectId);
+    this.getProject();
+  }
+
+  getProject(): void {
+    this.projectService.getProject(this.projectId).subscribe(project => this.project = project);
   }
 
   navigateToProject(id: number) {

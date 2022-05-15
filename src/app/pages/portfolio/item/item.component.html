@@ -1,5 +1,7 @@
 <div class="portfolio-card">
-    <div [routerLink]="[{ outlets: { portfolio: ['project', project.id] }}]" class="portfolio-overlay">
-        <p>{{project.title}}</p>
+    <div class="portfolio-image" [style.backgroundImage]="'url(' + project.pictures[0] +')'">
+        <div [routerLink]="[{ outlets: { portfolio: ['project', project.id] }}]" class="portfolio-overlay">
+            <div class="portfolio-title">{{project.title}}</div>
+        </div>
     </div>
 </div>

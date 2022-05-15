@@ -2,6 +2,14 @@
     background-color: var(--black-3);
     color: var(--white-1);
     height: 300px;
+    padding: 20px;
+}
+
+.portfolio-image {
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .portfolio-overlay {
@@ -11,12 +19,15 @@
     align-items: center;
     justify-content: center;
 }
-.portfolio-overlay p {
+.portfolio-title {
     font-family: "secondary", Arial, Helvetica, sans-serif;
     color: var(--white-1);
     font-size: 1.25rem;
     letter-spacing: 3px;
+    padding: 10px;
+    background-color: var(--black-2);
 }
 .portfolio-overlay:hover {
+    transition: 10ms;
     background-color: var(--black-2);
 }
