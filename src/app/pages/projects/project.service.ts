@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
-import { Project } from 'src/app/pages/portfolio/project';
-import { PROJECTS } from 'src/app/pages/portfolio/projects';
+import { Project } from 'src/app/pages/projects/project';
+import { PROJECTS } from 'src/app/pages/projects/projects';
 
 @Injectable({
   providedIn: 'root'

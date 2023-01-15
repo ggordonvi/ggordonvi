@@ -2,8 +2,6 @@
     background-color: var(--black-2);
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     min-height: var(--footer-height);
     display: flex;
     align-items: center;
@@ -15,6 +13,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.version {
+    font-family: "secondary", Arial, Helvetica, sans-serif;
+    color: var(--white-2);
+    font-size: 2rem;
+    letter-spacing: 3px;
 }
 
 .social {
@@ -30,7 +35,7 @@
     text-decoration: none !important;
 }
 .social-icon a:hover {
-    color: var(--primary-1);
+    color: var(--white-1);
 }
 
 /* Small devices (landscape phones, 576px and up) */

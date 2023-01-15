@@ -6,26 +6,26 @@ import { FourohfourComponent } from './pages/fourohfour/fourohfour.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
-import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { DashboardComponent } from './pages/projects/dashboard/dashboard.component';
+import { DetailComponent } from './pages/projects/detail/detail.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { DashboardComponent } from './pages/portfolio/dashboard/dashboard.component';
-import { DetailComponent } from './pages/portfolio/detail/detail.component';
 
 const routes: Routes = [
 
   // { path: 'contact',   component: ContactComponent },
   { 
-    path: 'portfolio',
-    component: PortfolioComponent,
+    path: 'projects',
+    component: ProjectsComponent,
     children: [
       {
         path: "",
-        outlet: "portfolio",
+        outlet: "projects",
         component: DashboardComponent
       },
       {
-        path: "project/:id",
-        outlet: "portfolio",
+        path: ":id",
+        outlet: "projects",
         component: DetailComponent
       }
     ]
@@ -38,12 +38,12 @@ const routes: Routes = [
     children: [
       {
         path: "",
-        outlet: "portfolio",
+        outlet: "projects",
         component: DashboardComponent
       },
       {
-        path: "project/:id",
-        outlet: "portfolio",
+        path: ":id",
+        outlet: "projects",
         component: DetailComponent
       }
     ]

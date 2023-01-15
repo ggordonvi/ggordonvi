@@ -1,9 +1,10 @@
 {
   "name": "ggordonvi",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "prebuild": "npm --no-git-tag-version version patch",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -31,7 +32,7 @@
     "@angular/cli": "~13.2.5",
     "@angular/compiler-cli": "~13.2.0",
     "@types/jasmine": "~3.10.0",
-    "@types/node": "^12.11.1",
+    "@types/node": "^12.20.52",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",

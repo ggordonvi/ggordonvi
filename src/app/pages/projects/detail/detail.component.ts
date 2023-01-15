@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { Project } from 'src/app/pages/portfolio/project';
-import { ProjectService } from 'src/app/pages/portfolio/project.service';
+import { Project } from 'src/app/pages/projects/project';
+import { ProjectService } from 'src/app/pages/projects/project.service';
 
 @Component({
-  selector: 'app-portfolio-detail',
+  selector: 'app-projects-detail',
   templateUrl: './detail.component.html',
   styleUrls: ['./detail.component.css']
 })

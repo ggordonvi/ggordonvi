@@ -1,44 +1,61 @@
-<div class="container">
-    <div class="mobile-nav">
+<div class="mobile-nav">
 
-        <!-- <div class="nav-brand">GGVI</div>  -->
+    <!-- <div class="nav-brand">GGVI</div>  -->
 
-        <div class="mobile-nav-open">
-            <button type="button" class="mobile-nav-button" aria-label="Open Menu" (click)="openMenu()">
-                <i class="fa-solid fa-bars fa-xl"></i>
-            </button>
-        </div>
-    
-        <div class="mobile-nav-overlay" id="mobile-nav-overlay" [style.width]="navOverlayWidth">
-            <div class="mobile-nav-menu">
-                <div class="mobile-nav-menu-header">directory.</div>
-                <div class="mobile-nav-close">
-                    <button type="button" class="mobile-nav-button" aria-label="Close Menu" (click)="closeMenu()">
-                        <i class="fa-solid fa-xmark fa-xl" style="color:#ffffff"></i>
-                    </button>
-                </div>
-            </div>
-    
-            <div class="mobile-nav-body">
-                <div class="mobile-nav-link-button" routerLink="/home" routerLinkActive="active-link" (click)="closeMenu()">
-                    home
-                </div>
-                <div class="mobile-nav-link-button" routerLink="/about" routerLinkActive="active-link" (click)="closeMenu()">
-                    about
-                </div>
-                <div class="mobile-nav-link-button" routerLink="/skills" routerLinkActive="active-link" (click)="closeMenu()">
-                    skills
-                </div>
-                <div class="mobile-nav-link-button" routerLink="/portfolio" routerLinkActive="active-link" (click)="closeMenu()">
-                    portfolio
-                </div>
-                <!-- <div class="mobile-nav-link-button" routerLink="/contact" routerLinkActive="active-link" (click)="closeMenu()">
-                    contact
-                </div> -->
-            </div>
-    
-        </div>
-    
+    <div class="mobile-nav-open">
+        <button type="button" class="mobile-nav-button" aria-label="Open Menu" (click)="openMenu()">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </button>
     </div>
-    
+
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay" [style.width]="navOverlayWidth">
+        <div class="mobile-nav-menu">
+            <!-- <div class="mobile-nav-menu-header">directory.</div> -->
+            <div class="mobile-nav-close">
+                <button type="button" class="mobile-nav-button" aria-label="Close Menu" (click)="closeMenu()">
+                    <i class="fa-solid fa-xmark fa-xl" style="color:#ffffff"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-nav-body">
+            <div class="mobile-nav-link-button" routerLink="/home" routerLinkActive="active-link" (click)="closeMenu()">
+                home
+            </div>
+            <div class="mobile-nav-link-button" routerLink="/about" routerLinkActive="active-link" (click)="closeMenu()">
+                about
+            </div>
+            <div class="mobile-nav-link-button" routerLink="/skills" routerLinkActive="active-link" (click)="closeMenu()">
+                skills
+            </div>
+            <div class="mobile-nav-link-button" routerLink="/projects" routerLinkActive="active-link" (click)="closeMenu()">
+                projects
+            </div>
+            <!-- <div class="mobile-nav-link-button" routerLink="/contact" routerLinkActive="active-link" (click)="closeMenu()">
+                contact
+            </div> -->
+        </div>
+
+        <div class="footer">
+            <div class="info">
+                <div class="version">
+                    <!-- v{{ version }} -->
+                    v1.0.1
+                </div>
+            </div>
+            <div class="social">
+                <span class="social-icon">
+                    <a class="fa-solid fa-2xl fa-at" href="mailto:ggordonvi@gmail.com"></a> 
+                </span>
+                <span class="social-icon">
+                    <a class="fa-brands fa-2xl fa-linkedin-in" target="_blank" href="https://www.linkedin.com/in/ggordon-vi/"></a>
+                </span>
+                <span class="social-icon">
+                    <a class="fa-brands fa-2xl fa-github"  target="_blank" href="https://github.com/ggordonvi"></a>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
 </div>

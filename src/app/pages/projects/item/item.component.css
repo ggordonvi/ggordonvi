@@ -1,0 +1,31 @@
+.project-card {
+    background-color: var(--black-3);
+    color: var(--white-1);
+    height: 300px;
+    border-radius: 1rem;
+}
+
+.project-card:hover .project-card-overlay {
+    display: block !important;
+    transition: 5ms;
+}
+
+.project-card-overlay {
+    display: none;
+    height: 100%;
+    background-color: rgba(97, 30, 30, 0.63);
+    border-radius: 1rem;
+}
+
+.project-title {
+    font-family: "test2", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.project-description {
+    font-family: "secondary", Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    color: var(--white-2);
+    letter-spacing: 3px;
+}

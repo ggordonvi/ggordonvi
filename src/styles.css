@@ -8,8 +8,20 @@
     src: local("BebasNeue"), url(./assets/fonts/BebasNeue-Regular.ttf) format("truetype");
 }
 @font-face {
+    font-family: "test1";
+    src: local('Anton-Regular'), url(./assets/fonts/Anton-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "test2";
+    src: local('ShadowsIntoLight-Regular'), url(./assets/fonts/ShadowsIntoLight-Regular.ttf) format("truetype");
+}
+@font-face {
     font-family: "ArchitectsDaughter";
     src: local("ArchitectsDaughter"), url(./assets/fonts/ArchitectsDaughter-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Antonio";
+    src: local("Antonio"), url(./assets/fonts/Antonio-VariableFont_wght.ttf) format("truetype");
 }
 
 :root {
@@ -32,7 +44,7 @@
 
     --navbar-height: 100px;
     --mobile-navbar-height: 80px;
-    --footer-height: 125px;
+    --footer-height: 100px;
 }
 
 html {
@@ -84,7 +96,7 @@ p {
 
 .section {
     /* padding-top: 150px;
-    padding-bottom: 50px; */
+    padding-bottom: 150px; */
 }
 .row-spacer {
     margin-top: 100px !important;
@@ -123,6 +135,7 @@ p {
     color: var(--primary-1);
     font-size: 2.5rem;
     letter-spacing: 3px;
+    margin-bottom: 10px;
 }
 
 .custom-btn {
@@ -139,6 +152,15 @@ p {
 }
 .custom-btn:hover {
     background-color: var(--primary-2);
+}
+
+.custom-card {
+    background-color: var(--black-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2px;
+    padding: 50px;
 }
 
 /* Small devices (landscape phones, 576px and up) */

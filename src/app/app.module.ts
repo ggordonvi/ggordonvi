@@ -13,12 +13,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
-import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { DashboardComponent } from './pages/projects/dashboard/dashboard.component';
+import { ItemComponent } from './pages/projects/item/item.component';
+import { DetailComponent } from './pages/projects/detail/detail.component';
 import { ContactComponent } from './pages/contact/contact.component';
-
-import { DashboardComponent } from './pages/portfolio/dashboard/dashboard.component';
-import { ItemComponent } from './pages/portfolio/item/item.component';
-import { DetailComponent } from './pages/portfolio/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +31,7 @@ import { DetailComponent } from './pages/portfolio/detail/detail.component';
     HomeComponent,
     AboutComponent,
     ExperienceComponent,
-    PortfolioComponent,
+    ProjectsComponent,
     ContactComponent,
     DashboardComponent,
     ItemComponent,

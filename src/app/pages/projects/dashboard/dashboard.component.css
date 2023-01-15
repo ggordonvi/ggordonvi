@@ -1,0 +1,12 @@
+.project-row {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-column {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

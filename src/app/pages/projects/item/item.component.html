@@ -1,0 +1,14 @@
+<!-- <div class="portfolio-card">
+    <div class="portfolio-image" [style.backgroundImage]="'url(' + project.pictures[0] +')'">
+        <div [routerLink]="[{ outlets: { projects: [project.id] }}]" class="portfolio-overlay">
+            <div class="portfolio-title">{{project.title}}</div>
+        </div>
+    </div>
+</div> -->
+
+<div class="project-card shadow" [routerLink]="[{ outlets: { projects: [project.id] }}]">
+    <div class="project-card-overlay">
+        <div class="project-title">{{project.title}}</div>
+        <div class="project-description">{{project.description}}</div>
+    </div>
+</div>

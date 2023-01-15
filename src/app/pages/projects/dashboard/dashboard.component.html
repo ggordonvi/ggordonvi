@@ -1,0 +1,14 @@
+<!-- <div class="row m-2">
+    <div class="col-sm-12 col-md-6 col-lg-4 p-0" *ngFor="let project of projects">
+        <app-projects-item [projectId]=project.id></app-projects-item>
+    </div>
+</div> -->
+
+<div class="project-row row mt-4 mb-4">
+    <div class="section-subheader">
+        Projects
+    </div>
+    <div class="project-column col-sm-12 col-md-6 col-lg-6 col-xl-4" *ngFor="let project of projects">
+        <app-projects-item [projectId]=project.id></app-projects-item>
+    </div>  
+</div>

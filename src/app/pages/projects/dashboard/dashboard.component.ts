@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from 'src/app/pages/portfolio/project';
-import { ProjectService } from 'src/app/pages/portfolio/project.service';
+import { Project } from 'src/app/pages/projects/project';
+import { ProjectService } from 'src/app/pages/projects/project.service';
 
 @Component({
-  selector: 'app-portfolio-dashboard',
+  selector: 'app-projects-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })

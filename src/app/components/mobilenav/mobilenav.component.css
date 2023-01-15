@@ -1,11 +1,11 @@
 
 .mobile-nav {
-    height: var(--mobile-navbar-height);
-    position: fixed;
+    /* height: var(--mobile-navbar-height); */
+    /* position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 1030; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -62,6 +62,7 @@
     background-color: var(--black-1);
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: height 0.5s ease-in; /*0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    z-index: 1000;
 }
 
 .mobile-nav-menu {
@@ -93,12 +94,14 @@
 }
 
 .mobile-nav-body {
-    min-height: 400px;
+    /* min-height: 400px; */
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
     align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .mobile-nav-link-button {
@@ -106,9 +109,9 @@
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    width: 60%;
+    /* width: 60%; */
     /* border-radius: 10px 10px; */
-    text-align: center;
+    /* text-align: center; */
     font-family: "secondary", Arial, Helvetica, sans-serif !important;
     font-size: 2rem;
     letter-spacing: 4px;
@@ -129,4 +132,46 @@
 .active-link {
     color: var(--white-1) !important;
     border-bottom: 2px solid var(--primary-1);
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    /* flex-direction: column; */
+    padding-bottom: 10px;
+}
+
+.info {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.version {
+    font-family: "secondary", Arial, Helvetica, sans-serif;
+    color: var(--white-2);
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icon {
+    padding: 15px;
+}
+.social-icon a {
+    color: var(--white-2);
+    text-decoration: none !important;
+}
+.social-icon a:hover {
+    color: var(--white-1);
 }
